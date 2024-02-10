@@ -1,0 +1,96 @@
+body, html {
+  width: 100wh;
+  height: 100vh;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  position: absolute;
+  top: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.header {
+  width: 100%;
+  height: 15%;
+  background-color: #B7B7A4;
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box;
+  background-color: #f0efeb;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  height: 85%;
+}
+
+.general {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box;
+  padding: 30px;
+  width: 30%;
+  height: 100%;
+  background-color: #e4e4de;
+}
+
+.right {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box;
+  height: 100%;
+  width: 70%;
+}
+
+.education {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box;
+  padding: 30px;
+
+  height: 30%;
+  background-color: #F0EFEB;
+}
+
+.experience {
+  box-sizing:border-box;
+  -moz-box-sizing:border-box; /* Firefox */
+  -webkit-box-sizing:border-box;
+  padding: 30px;
+
+  height: 70%;
+  background-color: #F0EFEB;
+}
+
+.title {
+  font-size: 1.5em;
+}
+
+.sections {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid columns */
+  grid-gap: 20px; /* Spacing between grid items */
+}
+
+@media screen and (max-width: 768px) {
+  .sections {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column size for smaller screens */
+  }
+}
+

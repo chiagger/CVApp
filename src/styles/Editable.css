@@ -1,0 +1,16 @@
+.editable {
+    display: flex;
+}
+
+.material-symbols-outlined {
+    margin-left: 3px;
+    font-size: 13px;
+    padding: 3px;
+    background-color: transparent;
+    border: 1px transparent;
+    border-radius: 50px;
+}
+
+
+
+
